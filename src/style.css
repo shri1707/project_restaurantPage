@@ -1,0 +1,126 @@
+body {
+    background-image: url("https://www.maisonvalentina.net/en/inspiration-and-ideas/wp-content/uploads/2018/07/luxury_restaurants1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header h1 {
+    font-style: italic;
+    color: #ea580c;
+    font-size: 100px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+button {
+    border: none;
+    text-align: center;
+    width: 100px;
+    border-radius: 10px;
+    height: 40px;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #dbebff;
+    background-color: unset;
+}
+
+button.active {
+    background-color: #2dd4bf;
+}
+
+#content {
+    margin-top: 40px;
+    background-color: rgba(90, 128, 134, 0.647);
+    border-radius: 40px;
+    width: 75%;
+    height: fit-content;
+}
+
+.main {
+    padding: 40px;
+}
+
+.main h2 {
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.quote {
+    font-size: 30px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.head {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.time {
+    font-size: 30px;
+    margin: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.time li {
+    margin: 10px;
+}
+
+.findUs img {
+    width: 60px;
+    height: 60px;
+}
+
+.findUs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+}
+
+.imgCont {
+    margin-right: 20px;
+    display: flex;
+    gap: 10px;
+}
+.imgCont img:hover{
+    filter: invert();
+}
+.imgCont img{
+    cursor: pointer;
+}
+
+.food-item img{
+    width: 80px;
+    height: 80px;
+}
+
+.mainContainer{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    text-align: center;
+    padding: 20px;
+}
