@@ -106,21 +106,68 @@ button.active {
     display: flex;
     gap: 10px;
 }
-.imgCont img:hover{
+
+.imgCont img:hover {
     filter: invert();
 }
-.imgCont img{
+
+.imgCont img {
     cursor: pointer;
 }
 
-.food-item img{
+.food-item img {
     width: 80px;
     height: 80px;
+    border-radius: 25px;
 }
 
-.mainContainer{
+.mainContainer {
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: repeat(3,1fr); 
     text-align: center;
     padding: 20px;
+    gap: 20px;
+    box-sizing: border-box;
+    width: 100%; /* Ensure it takes full width of its parent */
+    max-width: 100%; /* Prevent overflow */
+
+}
+
+.starter>div:nth-child(1),
+.mains>div:nth-child(1),
+.sweets>div:nth-child(1) {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.starter,
+.mains,
+.sweets {
+    background-color: #38bdf891;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.food-item {
+    display: flex;
+    gap: 30px;
+    background-color: white;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    /* width: 280px; */
+    height: 80px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%; /* Make the food item take full width of its parent */
+    max-width: 280px; /* Optional: control the max width to prevent too large items */
+}
+
+.food-item p {
+    font-size: 20px;
 }

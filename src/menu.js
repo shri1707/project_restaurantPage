@@ -36,13 +36,13 @@ function menu() {
     const starter = document.createElement("div")
     const mains = document.createElement("div")
     const sweetDish = document.createElement("div")
-    const starterName= document.createElement("div")
-    const mainsName= document.createElement("div")
-    const sweetName= document.createElement("div")
+    const starterName = document.createElement("div")
+    const mainsName = document.createElement("div")
+    const sweetName = document.createElement("div")
 
-    starterName.textContent="Starters"
-    mainsName.textContent="Main Course"
-    sweetName.textContent="Sweet Dish"
+    starterName.textContent = "Starters"
+    mainsName.textContent = "Main Course"
+    sweetName.textContent = "Sweet Dish"
 
     mainContainer.classList.add("mainContainer")
     starter.classList.add("starter")
@@ -54,18 +54,25 @@ function menu() {
     const mojito = new food("Mojito", "Rs.550", "https://media.istockphoto.com/id/1019323316/photo/mint-mojito-cocktail.jpg?s=612x612&w=0&k=20&c=t_iLQUqO6ItbJWM9nD2U9O0uBSqXeavts1cvVJabjxM=")
     const dal = new food("Dal Makhani", "Rs.400", "https://i.pinimg.com/564x/82/bb/b9/82bbb93fab74455c48029094a096a2d5.jpg")
     const roti = new food("Laccha Paratha", "Rs. 50(for one)", "https://media.istockphoto.com/id/1292639257/photo/lachha-paratha-a-layered-flat-bread-using-wheat-flour-popular-dish-in-north-india-isolated.jpg?s=612x612&w=0&k=20&c=191DQkniSsyk2EGK4OxwvFHJpDFHnUdqLUJN89o3M5c=")
+    const rice = new food("Rice", "Rs 250(half-plate)", "https://vaya.in/recipes/wp-content/uploads/2018/02/Boiled-rice.jpg")
     const iceCream = new food("Ice Cream", "Rs.70", "https://foodwithfeeling.com/wp-content/uploads/2023/07/Creami-Chocolate-Ice-Cream-4.jpg")
+    const rasgulla = new food("Rasgulla", "Rs.50(3 pieces)", "https://madhurasrecipe.com/wp-content/uploads/2023/10/Rasgulla-Featured-Image.jpg")
+    const rasMalai = new food("Ras Malai", "Rs.120(3 pieces)", "https://imagevars.gulfnews.com/2022/07/27/Ras-malai_1823fdf0779_large.jpg")
 
     starter.append(starterName)
     starter.appendChild(fries.display())
     starter.appendChild(chowmein.display())
     starter.appendChild(mojito.display())
+
     mains.append(mainsName)
     mains.appendChild(dal.display())
     mains.appendChild(roti.display())
+    mains.appendChild(rice.display())
+
     sweetDish.append(sweetName)
     sweetDish.appendChild(iceCream.display())
-
+    sweetDish.appendChild(rasgulla.display())
+    sweetDish.appendChild(rasMalai.display())
     mainContainer.appendChild(starter)
     mainContainer.appendChild(mains)
     mainContainer.appendChild(sweetDish)
@@ -73,4 +80,4 @@ function menu() {
     return mainContainer
 }
 
-export{menu}
+export { menu }
