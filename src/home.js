@@ -3,6 +3,7 @@ import fbsvg from "../SVG/facebook.svg";
 import igsvg from "../SVG/instagram.svg";
 import ytsvg from "../SVG/youtube.svg";
 
+
 function createHome() {
     const mainContainer = document.createElement("div");
     mainContainer.classList.add("main");
@@ -22,7 +23,7 @@ function createHome() {
     const yt = document.createElement("img");
     const imgCont = document.createElement("div")
 
-    heading.textContent = "Welcome to Shri's Restaurant";
+    heading.textContent = "Welcome to The Grand Heritage Manor";
     quote.textContent = `"Pull up a chair. Take a taste. Come join us. Life is so endlessly delicious."`;
     head.textContent = "Opening hours:";
     days.textContent = "Tuesday - Sunday";
